@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 import CoinInfo from './Components/CoinInfo';
-//import reactLogo from './assets/react.svg';
 
 import './App.css';
 
@@ -48,7 +47,7 @@ function App() {
             ? filteredResults.map((coin) =>
                 list.Data[coin].PlatformType === 'blockchain' ? (
                   <CoinInfo
-                    key={list.Data[coin].FullName}
+                    key={list.Data[coin].Symbol}
                     image={list.Data[coin].ImageUrl}
                     name={list.Data[coin].FullName}
                     symbol={list.Data[coin].Symbol}
@@ -59,7 +58,7 @@ function App() {
               Object.entries(list.Data).map(([coin]) =>
                 list.Data[coin].PlatformType === 'blockchain' ? (
                   <CoinInfo
-                    key={list.Data[coin].FullName}
+                    key={list.Data[coin].Symbol}
                     image={list.Data[coin].ImageUrl}
                     name={list.Data[coin].FullName}
                     symbol={list.Data[coin].Symbol}
