@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.icons {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 25px 50px 75px 30px;
+}
+li.main-list {
+  padding: 25px;
+  border-bottom: 3px solid white;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+}
+.whole-page {
+  padding: 50px;
+  text-align: center;
+  background: rgb(2, 2, 2);
+  color: white;
+}
+.tab {
+  display: inline-block;
+  margin-left: 75px;
+}
+.crypto-info {
+  width: 200px;
+}
